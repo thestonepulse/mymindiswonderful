@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explore — mymindiswonderful</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head>
+<body><div class="grain"></div>
+<header class="site-header"><a class="brand" href="index.html"><span>my</span>mindiswonderful</a><nav><a href="index.html">Home</a><a class="active" href="explore.html">Explore</a><a href="notes.html">My Notes</a><a href="field-notes.html">Field Notes</a><a href="knowledge-map.html">Knowledge Map</a><a href="about.html">About</a></nav><div class="header-actions"><button class="icon-btn" id="themeToggle">◐</button><a class="search-link" href="#search">Search</a></div></header>
+<main class="page">
+<section class="page-intro"><p class="eyebrow">The archive</p><h1>Explore knowledge.</h1><p>Follow a question, a subject, or simply the next interesting doorway.</p></section>
+<section id="search" class="search-panel"><label for="searchInput">What are you curious about?</label><div class="search-row"><input id="searchInput" type="search" placeholder="Try “fungi”, “memory”, “forests”..."><button class="button button-dark" id="surpriseBtn">Teach me something ✦</button></div><div class="filters" id="filters"><button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Nature">Nature</button><button class="filter" data-filter="Mind">Mind</button><button class="filter" data-filter="Wisdom">Wisdom</button><button class="filter" data-filter="Science">Science</button><button class="filter" data-filter="Philosophy">Philosophy</button><button class="filter" data-filter="Field Notes">Field Notes</button></div></section>
+<section class="results-section"><div class="results-head"><p class="eyebrow">Wander through</p><span id="resultCount"></span></div><div id="results" class="explore-grid"></div></section>
+<div id="surprise" class="surprise-modal" hidden><div class="surprise-box"><button class="close" id="closeSurprise">×</button><p class="eyebrow">Teach me something</p><h2 id="surpriseTitle"></h2><p id="surpriseText"></p><a id="surpriseLink" class="text-link" href="#">Explore this idea →</a></div></div>
+</main><footer class="site-footer"><div><a class="brand" href="index.html"><span>my</span>mindiswonderful</a><p>A growing archive for curious minds.</p></div><div class="footer-links"><a href="about.html">About</a><a href="notes.html">My Notes</a><a href="field-notes.html">Field Notes</a></div><p class="copyright">Made for wandering slowly.</p></footer>
+<script src="data.js"></script><script src="app.js"></script><script src="explore.js"></script></body></html>
